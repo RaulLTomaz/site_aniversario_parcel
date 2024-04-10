@@ -1,0 +1,34 @@
+@use "header";
+@use "variables";
+@use "components/infos-bar";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$primaryTextColor;
+    list-style: none;
+}
+
+body {
+    background-color: variables.$corFundo;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 16px auto;
+    border: 12px solid #fff;
+    border-radius: 20px;
+    padding: 32px;
+    background-color: #444;
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+}
